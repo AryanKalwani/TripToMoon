@@ -40,9 +40,9 @@ Eg.
     "description": "Go to the Moon of Pluto, even though it is not a planet."
 }
 ```
-**URL:/moons/<str:name>/
+## URL:/moons/<str:name>/
 
-***Methods:
+### Methods:
 
 #### GET
 
