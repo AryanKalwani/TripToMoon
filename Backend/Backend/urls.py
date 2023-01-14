@@ -19,9 +19,8 @@ from rest_framework import routers
 from api.views import MoonViewSet, GroceryStoreViewSet
 
 router = routers.DefaultRouter()
-router.register(r'moons', MoonViewSet)
+router.register(r'moons', MoonViewSet,"moons")
 router.register(r'grocerystores', GroceryStoreViewSet)
-
 
 urlpatterns = [
     path('admin/', admin.site.urls),
