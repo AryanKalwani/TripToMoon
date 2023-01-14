@@ -1,15 +1,19 @@
-**URL:/moons/
+# API Documentation
 
-***Methods: 
+## URL:/moons/
 
-GET
+### Methods: 
+
+#### GET
+
 Get a list of moons can be traveled to.
 
+```
 Eg.
 [
     {
         "name": "Pluto Moon",
-        "imageUrl": "http://www.google.com",
+        "imageUrl": "http://www.google.com",       
         "price": "13.99",
         "description": "This is Pluto Moon"
     },
@@ -20,10 +24,14 @@ Eg.
         "description": "This is a moon of Mercury"
     }
 ]
+```
 
-POST
+#### POST
+
 POST a new moon can be traveled to.
+
 *name field is a primary key, which means duplicate moon should be a PUT action.
+```
 Eg.
 {
     "name": "Pluto Moon",
@@ -31,14 +39,15 @@ Eg.
     "price": "Start from $1299",
     "description": "Go to the Moon of Pluto, even though it is not a planet."
 }
-
+```
 **URL:/moons/<str:name>/
 
 ***Methods:
 
-GET
-Get a specific moon by the name of the moon
+#### GET
 
+Get a specific moon by the name of the moon
+```
 Eg.
 {
     "name": "Pluto Moon",
@@ -46,10 +55,11 @@ Eg.
     "price": "13.99",
     "description": "This is Pluto Moon"
 }
+```
+#### PUT
 
-PUT
 Update a specific moon
-
+```
 Eg.
 {
     "name": "Pluto Moon",
@@ -57,18 +67,20 @@ Eg.
     "price": "13.99",                      ----->"price":"21.99"
     "description": "This is Pluto Moon"
 }
+```
+#### DELETE
 
-DELETE
 Delete this moon from list
 
 
-**URL:/grocerystores/
+## URL:/grocerystores/
 
-***Methods: 
+#### Methods: 
 
-GET
+#### GET
+
 Get a list of grocery stores can be traveled to.
-
+```
 Eg.
 [
     {
@@ -78,10 +90,13 @@ Eg.
         "distance": "100000km"
     }
 ]
+```
+#### POST
 
-POST
 POST a new grocery stores can be traveled to.
+
 *name field is a primary key, which means duplicate moon should be a PUT action.
+```
 Eg.
 {
         "name": "Save on Food",
@@ -89,14 +104,15 @@ Eg.
         "price": "121.99",
         "distance": "110000km"
 }
+```
+## URL:/grocerystores/<str:name>/
 
-**URL:/grocerystores/<str:name>/
+### Methods:
 
-***Methods:
+#### GET
 
-GET
 Get a specific grocery stores by the name of the moon
-
+```
 Eg.
 {
         "name": "Safeway",
@@ -104,10 +120,12 @@ Eg.
         "price": "12.99",
         "distance": "100000km"
 }
+```
 
-PUT
+#### PUT
+
 Update a specific grocery stores
-
+```
 Eg.
 {
         "name": "Safeway",
@@ -115,8 +133,9 @@ Eg.
         "price": "12.99",   -------> "price": "123.99",
         "distance": "100000km"
 }
+```
+#### DELETE
 
-DELETE
 Delete this grocery stores from list
 
 
