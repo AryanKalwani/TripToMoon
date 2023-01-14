@@ -7,13 +7,13 @@ class Moon(models.Model):
     name = models.CharField(max_length=255, primary_key=True)
     imageUrl = models.URLField(max_length=255)
     price = models.CharField(max_length=255)
-    Description = models.CharField(max_length=255)
+    description = models.CharField(max_length=255)
 
 class GroceryStore(models.Model):
     type = 'GroceryStore'
     name = models.CharField(max_length=255, primary_key=True)
     location = models.CharField(max_length=255)
-    Price = models.CharField(max_length=255)
+    price = models.CharField(max_length=255)
     distance = models.CharField(max_length=255)
 
 
