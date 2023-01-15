@@ -13,12 +13,20 @@
   }
 }
 button {
-  background-color: rgb(117, 137, 143);
+  background-color: rgb(47, 46, 50);
   color:white;
-  border:0;
-  font-size: 24px;
+ 
+  
   cursor:pointer;
-  border-radius: 20%;
+  border-radius: 50%;
+}
+li {
+  color:#61dafb;
+  
+}
+span {
+  font-size: 20px;
+  color:antiquewhite;
 }
 
 .App-header {

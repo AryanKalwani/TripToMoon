@@ -7,10 +7,11 @@ function Home() {
       <header className="App-header">
         <h1>Trip Starts Here</h1>
         <div id='slogan'>Enjoy!</div>        
-     
+     <button>
       <ul>
-        <li><Link to="/tolist">get ticket</Link></li>
+        <li><Link to="/tolist"><span>get ticket</span></Link></li>
       </ul>
+      </button>
       </header>
     </div>
   )
