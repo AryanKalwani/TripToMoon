@@ -2,18 +2,16 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
+  const connect = ()=>{
+    alert('connect');
+  }
   return (
-    <div className="App" >
+    <div className="App">
       <header className="App-header">
-        <p>
-          Trip start here
-        </p>
-        <a
-          className="App-link"
-          
-        >
-          Start
-        </a>
+        <h1>Trip Starts Here</h1>
+        <div id='slogan'>Enjoy!</div>
+        <button onClick={connect}>get ticket </button>
+        
       </header>
     </div>
   );
