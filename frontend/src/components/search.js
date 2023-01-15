@@ -12,5 +12,10 @@ const Search = () => {
         <button type="submit">Search</button>
     </form>
 }
+const posts = [
+    {id:'1', name:'Catzone'},
+    {id:'2', name:'Catzone'},
+    {id:'3', name:'Catzone'},
+]
 
 export default Search;

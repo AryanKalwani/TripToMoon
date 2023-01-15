@@ -29,6 +29,35 @@ span {
   color:antiquewhite;
 }
 
+.header-search {
+  width: 45%;
+  padding:14px 20px;
+  margin:8px 0;
+  margin-left: 27%;
+  text-align: center;
+  border-radius: 20%;
+  background-color: #61686a;
+}
+.bb{
+  width:13%;
+  height: 40px;
+  margin-left:45%;
+}
+.todohead {
+  margin-top: 2%;
+  text-align: center;
+  font-size: 50px;
+  color:aliceblue
+  
+}
+
+.todo {
+  background-color: #324b52;
+  background-size: cover;
+  height:100%;
+}
+
+
 .App-header {
   background-image:url("bg.png");
   min-height: 100vh;

@@ -5,7 +5,8 @@ import { Link } from "react-router-dom";
 export default function TodoList() {
     
       return (
-        <> 
+        <header className='todo'> 
+        
       {/* <ListGroup>
           <ListGroup.Item>Cras justo odio</ListGroup.Item>
           <ListGroup.Item>Dapibus ac facilisis in</ListGroup.Item>
@@ -14,25 +15,65 @@ export default function TodoList() {
           <ListGroup.Item>Vestibulum at eros</ListGroup.Item>
         </ListGroup> */}
 
-         <h1>Select your ticket here</h1>
+         <h1 className='todohead'>Select your ticket here</h1>
+         <br/>
+         <br/>
+         <br/>
          <Search />
          <form action="/"  method="get">
         <label>
-            <span className="visually-hidden">--></span>
+            <span className="visually-hidden"></span>
         </label>
         <input
             type="text"
-            id="header-search"
-            placeholder="Search a place on moon"
+            className="header-search"
+            placeholder="Enter a place on moon"
             name="s"
         />
-        <button type="submit">Search</button>
+       
+        <br/>
+        <br/>
+        
+         
+        <label>
+            <span className="visually-hidden"></span>
+        </label>
+        <input
+            type="text"
+            className="header-search"
+            placeholder="Enter the grocery"
+            name="s"
+        />
+        <br/>
+        <br/>
+        <button className='bb' type="submit">Check Out</button>
+         <br/>
+         <br/>
+         <br/>
+         <br/>
+         <br/>
+         <br/>
+         <br/>
+         <br/>
+        
     </form>
          <ul>
             <li><Link to="/">back</Link></li>
          </ul>
+         <div className='todo2'>
          
-        </>
+         <br/>
+         <br/>
+         <br/>
+         <br/>
+         <br/>
+         <br/>
+         <br/>
+         <br/>
+         <br/>
+         </div>
+         
+        </header>
         );
       
     }
