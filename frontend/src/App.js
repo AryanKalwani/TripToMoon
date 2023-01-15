@@ -1,19 +1,22 @@
 import logo from './logo.svg';
 import './App.css';
+import { Route, Routes, Link } from 'react-router-dom';
+import TodoList from './components/TodoList';
+import Home from './components/Home';
 
 function App() {
   const connect = ()=>{
     alert('connect');
   }
   return (
-    <div className="App">
-      <header className="App-header">
-        <h1>Trip Starts Here</h1>
-        <div id='slogan'>Enjoy!</div>
-        <button onClick={connect}>get ticket </button>
-        
-      </header>
-    </div>
+    <>
+    <Routes>
+      <Route path='/tolist' element={<TodoList />} />
+      <Route path="/" element={<Home />} />
+    </Routes>
+     
+    </>
+     
   );
 }
 
